@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmos-tmon-rotation-bot"
+version = "0.1.0"
+description = "Read-only scaffold for pre-close TMOS/TMON allocation on a T-Invest IIS"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+rotation-bot = "rotation_bot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

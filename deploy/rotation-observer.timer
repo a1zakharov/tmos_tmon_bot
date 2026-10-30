@@ -1,0 +1,11 @@
+[Unit]
+Description=Check the dynamic pre-close window every 30 seconds
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=30s
+AccuracySec=1s
+Unit=rotation-observer.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=Read-only TMOS TMON pre-close observer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=rotation-bot
+WorkingDirectory=/opt/tmos-tmon-bot
+EnvironmentFile=/etc/tmos-tmon-bot.env
+ExecStart=/usr/bin/python3 /opt/tmos-tmon-bot/run.py observe --config /etc/tmos-tmon-bot.toml
+UMask=0077
+NoNewPrivileges=true
+StateDirectory=tmos-tmon-bot
+# Example only: deployment/account/execution are not enabled by this repository.

@@ -1,0 +1,20 @@
+mode = "observe"
+state_file = "data/state.sqlite3"
+signal_symbol = "IMOEX"
+risk_ticker = "TMOS"
+defensive_ticker = "TMON"
+# Empty = resolve the unique API-available TQBR/TQTF fund; pin if ambiguous.
+class_code = ""
+
+# A common session is derived from the two instruments' actual broker schedules.
+minutes_before_close = 5
+decision_window_seconds = 60
+max_quote_age_seconds = 45
+max_book_age_seconds = 30
+max_spread_bps = "30"
+max_limit_deviation_bps = "10"
+cash_reserve_rub = "1000"
+invest_idle_cash = false
+
+# Public ISS is not assumed to be a verified realtime feed.
+signal_feed_verified_realtime = false

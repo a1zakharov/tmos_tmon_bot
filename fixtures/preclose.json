@@ -1,0 +1,27 @@
+{
+  "now": "2026-10-30T20:45:05Z",
+  "session": {"day": "2026-10-30", "start": "2026-10-30T16:05:00Z", "end": "2026-10-30T20:50:00Z"},
+  "previous": {"day": "2026-10-29", "high": "2530", "low": "2490"},
+  "snapshot": {"price": "2480", "observed_at": "2026-10-30T20:45:00Z"},
+  "verified_realtime": true,
+  "account": {
+    "id": "demo-iis",
+    "type": "ACCOUNT_TYPE_TINKOFF_IIS",
+    "status": "ACCOUNT_STATUS_OPEN",
+    "available_rub": "1000",
+    "free_units": {"TMOS": 1000, "TMON": 0},
+    "blocked_units": {"TMOS": 0, "TMON": 0}
+  },
+  "instruments": {
+    "TMOS": {"uid": "demo-tmos-uid", "figi": "demo-tmos-figi", "exchange": "DEMO", "lot": 1, "tick": "0.01"},
+    "TMON": {"uid": "demo-tmon-uid", "figi": "demo-tmon-figi", "exchange": "DEMO", "lot": 1, "tick": "0.0001"}
+  },
+  "books": {
+    "TMOS": {"bid": "6.28", "ask": "6.29", "observed_at": "2026-10-30T20:45:00Z"},
+    "TMON": {"bid": "1.2000", "ask": "1.2010", "observed_at": "2026-10-30T20:45:00Z"}
+  },
+  "trading_statuses": {
+    "TMOS": {"apiTradeAvailableFlag": true, "limitOrderAvailableFlag": true, "tradingStatus": "SECURITY_TRADING_STATUS_NORMAL_TRADING"},
+    "TMON": {"apiTradeAvailableFlag": true, "limitOrderAvailableFlag": true, "tradingStatus": "SECURITY_TRADING_STATUS_NORMAL_TRADING"}
+  }
+}
