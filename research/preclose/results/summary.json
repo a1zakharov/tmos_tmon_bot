@@ -1,0 +1,331 @@
+{
+  "hold_tmos": {
+    "name": "hold_tmos",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 812620.01,
+    "profit": -7379.989999999991,
+    "xirr": -0.005381784554315639,
+    "twr_cagr": 0.02376873278620284,
+    "max_drawdown_twr": -0.3524113507001201,
+    "target_changes": 0,
+    "trade_legs": 82,
+    "signal_days": 847,
+    "accepted_snapshots": 161,
+    "stale_snapshots": 686,
+    "missing_snapshots": 0,
+    "participation_cap": 1.0,
+    "oversized_bar_requests": 39,
+    "partial_fills": 39,
+    "maximum_demand_to_printed_volume": 2134.0,
+    "cash_waiting_days": 27,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.09779797504047316,
+        "deposits": 120000.0,
+        "end_equity": 121989.26
+      },
+      "2024": {
+        "twr": 0.000281363092589082,
+        "deposits": 240000.0,
+        "end_equity": 363579.16
+      },
+      "2025": {
+        "twr": 0.02907594473758346,
+        "deposits": 240000.0,
+        "end_equity": 616331.03
+      },
+      "2026": {
+        "twr": -0.043333526077497075,
+        "deposits": 220000.0,
+        "end_equity": 812620.01
+      }
+    }
+  },
+  "hold_tmon": {
+    "name": "hold_tmon",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 1077503.19,
+    "profit": 257503.18999999994,
+    "xirr": 0.16854674424395902,
+    "twr_cagr": 0.166673848787259,
+    "max_drawdown_twr": -0.002800778183859931,
+    "target_changes": 0,
+    "trade_legs": 127,
+    "signal_days": 847,
+    "accepted_snapshots": 161,
+    "stale_snapshots": 686,
+    "missing_snapshots": 0,
+    "participation_cap": 1.0,
+    "oversized_bar_requests": 86,
+    "partial_fills": 86,
+    "maximum_demand_to_printed_volume": 190.0,
+    "cash_waiting_days": 29,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.05749762570572603,
+        "deposits": 120000.0,
+        "end_equity": 124678.82999999999
+      },
+      "2024": {
+        "twr": 0.1815727892366641,
+        "deposits": 240000.0,
+        "end_equity": 411905.48
+      },
+      "2025": {
+        "twr": 0.19351199738198388,
+        "deposits": 240000.0,
+        "end_equity": 755106.29
+      },
+      "2026": {
+        "twr": 0.1183817444468096,
+        "deposits": 220000.0,
+        "end_equity": 1077503.19
+      }
+    }
+  },
+  "preclose": {
+    "name": "preclose",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 914668.7099999996,
+    "profit": 94668.70999999961,
+    "xirr": 0.06602027071294633,
+    "twr_cagr": 0.06755521985370683,
+    "max_drawdown_twr": -0.2726414875028669,
+    "target_changes": 36,
+    "trade_legs": 4441,
+    "signal_days": 847,
+    "accepted_snapshots": 161,
+    "stale_snapshots": 686,
+    "missing_snapshots": 0,
+    "participation_cap": 1.0,
+    "oversized_bar_requests": 4328,
+    "partial_fills": 4328,
+    "maximum_demand_to_printed_volume": 150355.0,
+    "cash_waiting_days": 58,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.09779797504047316,
+        "deposits": 120000.0,
+        "end_equity": 121989.26
+      },
+      "2024": {
+        "twr": 0.000281363092589082,
+        "deposits": 240000.0,
+        "end_equity": 363579.16
+      },
+      "2025": {
+        "twr": 0.02907594473758346,
+        "deposits": 240000.0,
+        "end_equity": 616331.03
+      },
+      "2026": {
+        "twr": 0.09929678700824862,
+        "deposits": 220000.0,
+        "end_equity": 914668.7099999996
+      }
+    }
+  },
+  "preclose_unlimited": {
+    "name": "preclose_unlimited",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 950960.0700000002,
+    "profit": 130960.07000000018,
+    "xirr": 0.08997886059831589,
+    "twr_cagr": 0.08177890780660868,
+    "max_drawdown_twr": -0.2726414875028669,
+    "target_changes": 36,
+    "trade_legs": 112,
+    "signal_days": 847,
+    "accepted_snapshots": 161,
+    "stale_snapshots": 686,
+    "missing_snapshots": 0,
+    "participation_cap": null,
+    "oversized_bar_requests": 82,
+    "partial_fills": 0,
+    "maximum_demand_to_printed_volume": 158441.0,
+    "cash_waiting_days": 53,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.09779797504047316,
+        "deposits": 120000.0,
+        "end_equity": 121989.26
+      },
+      "2024": {
+        "twr": 0.000281363092589082,
+        "deposits": 240000.0,
+        "end_equity": 363579.16
+      },
+      "2025": {
+        "twr": 0.02931845672616462,
+        "deposits": 240000.0,
+        "end_equity": 616461.14
+      },
+      "2026": {
+        "twr": 0.14838260354421728,
+        "deposits": 220000.0,
+        "end_equity": 950960.0700000002
+      }
+    }
+  },
+  "last_quote": {
+    "name": "last_quote",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 1093869.4299999992,
+    "profit": 273869.42999999924,
+    "xirr": 0.17820077273965224,
+    "twr_cagr": 0.20000025505919639,
+    "max_drawdown_twr": -0.18821521777036454,
+    "target_changes": 172,
+    "trade_legs": 11612,
+    "signal_days": 847,
+    "accepted_snapshots": 847,
+    "stale_snapshots": 0,
+    "missing_snapshots": 0,
+    "participation_cap": 1.0,
+    "oversized_bar_requests": 11233,
+    "partial_fills": 11233,
+    "maximum_demand_to_printed_volume": 185066.0,
+    "cash_waiting_days": 151,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.07443812324278798,
+        "deposits": 120000.0,
+        "end_equity": 121045.33999999998
+      },
+      "2024": {
+        "twr": 0.3302624893099366,
+        "deposits": 240000.0,
+        "end_equity": 459147.1700000004
+      },
+      "2025": {
+        "twr": 0.2346881480155638,
+        "deposits": 240000.0,
+        "end_equity": 827799.2299999993
+      },
+      "2026": {
+        "twr": 0.03769430628417192,
+        "deposits": 220000.0,
+        "end_equity": 1093869.4299999992
+      }
+    }
+  },
+  "before_auction": {
+    "name": "before_auction",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 1033250.3200000008,
+    "profit": 213250.32000000076,
+    "xirr": 0.14188871708216885,
+    "twr_cagr": 0.1821287568823562,
+    "max_drawdown_twr": -0.224264594983817,
+    "target_changes": 168,
+    "trade_legs": 10657,
+    "signal_days": 847,
+    "accepted_snapshots": 846,
+    "stale_snapshots": 0,
+    "missing_snapshots": 1,
+    "participation_cap": 1.0,
+    "oversized_bar_requests": 10287,
+    "partial_fills": 10287,
+    "maximum_demand_to_printed_volume": 168918.0,
+    "cash_waiting_days": 182,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.1071494616396167,
+        "deposits": 120000.0,
+        "end_equity": 123186.07999999996
+      },
+      "2024": {
+        "twr": 0.31736735785536907,
+        "deposits": 240000.0,
+        "end_equity": 457756.1400000005
+      },
+      "2025": {
+        "twr": 0.19058823410910053,
+        "deposits": 240000.0,
+        "end_equity": 799408.5099999994
+      },
+      "2026": {
+        "twr": 0.0033374062510131974,
+        "deposits": 220000.0,
+        "end_equity": 1033250.3200000008
+      }
+    }
+  },
+  "participation_10pct": {
+    "name": "participation_10pct",
+    "start": "2023-07-12",
+    "end": "2026-11-05",
+    "contributions": 820000.0,
+    "final_equity": 882667.7300000027,
+    "profit": 62667.73000000266,
+    "xirr": 0.04429938070815647,
+    "twr_cagr": 0.05669011029501547,
+    "max_drawdown_twr": -0.27272539020568487,
+    "target_changes": 36,
+    "trade_legs": 10763,
+    "signal_days": 847,
+    "accepted_snapshots": 161,
+    "stale_snapshots": 686,
+    "missing_snapshots": 0,
+    "participation_cap": 0.1,
+    "oversized_bar_requests": 16877,
+    "partial_fills": 17211,
+    "maximum_demand_to_printed_volume": 150614.0,
+    "cash_waiting_days": 140,
+    "commission": 0.0,
+    "tax_paid": 0.0,
+    "contribution_tax_refund": 0.0,
+    "annual": {
+      "2023": {
+        "twr": 0.09779797504047316,
+        "deposits": 120000.0,
+        "end_equity": 121989.26
+      },
+      "2024": {
+        "twr": 0.00016440082504587394,
+        "deposits": 240000.0,
+        "end_equity": 363544.39
+      },
+      "2025": {
+        "twr": 0.029152720569952217,
+        "deposits": 240000.0,
+        "end_equity": 616338.4600000001
+      },
+      "2026": {
+        "twr": 0.06265239132092537,
+        "deposits": 220000.0,
+        "end_equity": 882667.7300000027
+      }
+    }
+  }
+}

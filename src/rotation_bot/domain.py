@@ -52,6 +52,7 @@ class Session:
     day: date
     start: datetime
     end: datetime
+    kind: str = "main"
 
 
 @dataclass(frozen=True)
@@ -89,8 +90,8 @@ class Account:
 class Frame:
     now: datetime
     session: Session
-    previous: PreviousDay
-    snapshot: Snapshot
+    previous: PreviousDay | None
+    snapshot: Snapshot | None
     account: Account
     instruments: dict[str, Instrument]
     books: dict[str, Book]

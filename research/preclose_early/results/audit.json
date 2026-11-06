@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "scenarios": {
+    "hold_tmos": {
+      "maximum_daily_accounting_error": 1.1641532182693481e-10,
+      "independent_ledger_cash_error": -2.4010660126805305e-10,
+      "source_ticker_fills": {
+        "TMOS": 58
+      }
+    },
+    "hold_lqdt": {
+      "maximum_daily_accounting_error": 1.6859758034115657e-10,
+      "independent_ledger_cash_error": 2.874003257602453e-10,
+      "source_ticker_fills": {
+        "VTBM": 47,
+        "LQDT": 12
+      }
+    },
+    "preclose": {
+      "maximum_daily_accounting_error": 1.1641532182693481e-10,
+      "independent_ledger_cash_error": -2.4010660126805305e-10,
+      "source_ticker_fills": {
+        "TMOS": 58
+      }
+    },
+    "last_quote": {
+      "maximum_daily_accounting_error": 2.7569058147491887e-10,
+      "independent_ledger_cash_error": -6.984919309616089e-10,
+      "source_ticker_fills": {
+        "TMOS": 1199,
+        "VTBM": 321,
+        "LQDT": 355
+      }
+    },
+    "before_auction": {
+      "maximum_daily_accounting_error": 2.856950231944211e-10,
+      "independent_ledger_cash_error": -4.656612873077393e-10,
+      "source_ticker_fills": {
+        "TMOS": 1316,
+        "VTBM": 387,
+        "LQDT": 296
+      }
+    },
+    "participation_10pct": {
+      "maximum_daily_accounting_error": 5.795186552859377e-10,
+      "independent_ledger_cash_error": -5.384208634495735e-09,
+      "source_ticker_fills": {
+        "TMOS": 8740,
+        "VTBM": 1872,
+        "LQDT": 1916
+      }
+    }
+  }
+}

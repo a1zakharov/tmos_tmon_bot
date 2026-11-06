@@ -16,12 +16,14 @@ class Config:
     class_code: str = ""
     minutes_before_close: int = 5
     decision_window_seconds: int = 60
-    max_quote_age_seconds: int = 45
+    max_quote_age_seconds: int = 600
     max_book_age_seconds: int = 30
     max_spread_bps: str = "30"
     max_limit_deviation_bps: str = "10"
     cash_reserve_rub: str = "1000"
     invest_idle_cash: bool = False
+    # Legacy input retained so existing config files still load. The last-quote
+    # model validates the minute's exchange timestamp instead of this flag.
     signal_feed_verified_realtime: bool = False
 
     def validate(self):
@@ -33,7 +35,9 @@ class Config:
             raise BotError("This strategy version is fixed at five minutes before the common session close")
         if not 0 < self.decision_window_seconds < 300:
             raise BotError("Invalid decision window")
-        if min(self.max_quote_age_seconds, self.max_book_age_seconds) <= 0:
+        if self.max_quote_age_seconds != 600:
+            raise BotError("The last-quote model requires max_quote_age_seconds = 600; update your local config")
+        if self.max_book_age_seconds <= 0:
             raise BotError("Data age limits must be positive")
         for value in (self.max_spread_bps, self.max_limit_deviation_bps, self.cash_reserve_rub):
             if Decimal(value) < 0:

@@ -4,7 +4,7 @@ from .domain import PreviousDay, Snapshot, Target, BotError
 
 def target_for_snapshot(previous: PreviousDay, current: Snapshot, last_target: Target) -> tuple[Target, str]:
     previous.validate()
-    if current.price <= 0 or current.symbol != "IMOEX":
+    if not current.price.is_finite() or current.price <= 0 or current.symbol != "IMOEX":
         raise BotError("Invalid IMOEX snapshot")
     if current.price < previous.low:
         return Target.TMON, "below_previous_low"

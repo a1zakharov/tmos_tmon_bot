@@ -8,7 +8,8 @@ from urllib import error, parse, request
 
 from .domain import (Account, Book, BotError, Frame, Instrument, MSK, PreviousDay,
                      Snapshot, quotation, timestamp)
-from .schedule import common_last_session, sessions_from_day, window_status, decision_window
+from .schedule import common_main_session, sessions_from_day, window_status, decision_window
+from .state import scope_for
 
 
 class NoRedirect(request.HTTPRedirectHandler):
@@ -119,7 +120,7 @@ class ReadOnlyTInvest:
 
 
 class MoexSignalFeed:
-    """ISS observations; realtime suitability must be verified separately."""
+    """Timestamped completed minutes, with no realtime-delivery assumption."""
     BASE = "https://iss.moex.com/iss/engines/stock/markets/index/boards/SNDX/securities/IMOEX"
 
     def _read(self, suffix, params):
@@ -141,38 +142,57 @@ class MoexSignalFeed:
         row = max(rows, key=lambda r: r["begin"])
         return PreviousDay(datetime.fromisoformat(row["begin"]).date(), Decimal(str(row["high"])), Decimal(str(row["low"])))
 
-    def snapshot(self):
-        block = self._read(".json", {"iss.only": "marketdata"})["marketdata"]
-        rows = [dict(zip(block["columns"], r)) for r in block["data"]]
-        rows = [r for r in rows if r.get("SECID") == "IMOEX" and r.get("BOARDID") == "SNDX"]
-        if len(rows) != 1:
-            raise BotError("Ambiguous IMOEX price feed")
-        row = rows[0]
-        trading_date = row.get("TRADE_SESSION_DATE") or row.get("TRADEDATE")
-        update_time = row.get("UPDATETIME")
-        if not trading_date or not update_time or row.get("CURRENTVALUE") is None:
-            raise BotError("IMOEX quote has no exchange timestamp")
-        observed = datetime.fromisoformat(trading_date + "T" + update_time).replace(tzinfo=MSK)
-        return Snapshot("IMOEX", Decimal(str(row["CURRENTVALUE"])), observed)
+    def snapshot(self, cutoff: datetime) -> Snapshot | None:
+        if cutoff.tzinfo is None:
+            raise BotError("Signal cutoff must have a timezone")
+        cutoff = cutoff.astimezone(MSK)
+        block = self._read("/candles.json", {
+            "interval": 1, "from": (cutoff - timedelta(minutes=11)).strftime("%Y-%m-%d %H:%M:%S"),
+            "till": cutoff.strftime("%Y-%m-%d %H:%M:%S")})["candles"]
+        candidates = []
+        for values in block["data"]:
+            row = dict(zip(block["columns"], values))
+            begin = datetime.fromisoformat(row["begin"]).replace(tzinfo=MSK)
+            end = datetime.fromisoformat(row["end"]).replace(tzinfo=MSK)
+            if (begin.date() == cutoff.date() and begin <= end < cutoff
+                    and begin + timedelta(minutes=1) <= cutoff):
+                price = Decimal(str(row["close"]))
+                if not price.is_finite() or price <= 0 or end - begin > timedelta(seconds=59):
+                    raise BotError("Invalid completed IMOEX minute")
+                candidates.append(Snapshot("IMOEX", price, end))
+        return max(candidates, key=lambda s: s.observed_at) if candidates else None
 
 
-def observe_frame(client, feed, account_id, cfg):
+def observe_frame(client, feed, account_id, cfg, store=None, clock=None):
     """Return a validated input frame, or a scheduling result before quote polling."""
-    now = datetime.now(UTC)
+    clock = clock or (lambda: datetime.now(UTC))
+    now = clock()
     meta = client.account(account_id)
     instruments = {t: client.instrument(t, cfg.class_code) for t in ("TMOS", "TMON")}
     sessions = {t: client.day_sessions(i.exchange, now.astimezone(MSK).date()) for t, i in instruments.items()}
-    common = common_last_session(sessions["TMOS"], sessions["TMON"])
+    common = common_main_session(sessions["TMOS"], sessions["TMON"])
     if not common:
         return {"status": "no_common_session", "orders_submitted": 0}
     status = window_status(now, common, cfg.minutes_before_close, cfg.decision_window_seconds)
-    if status != "due":
+    prior = store.latest(scope_for(account_id), common.day.isoformat()) if store else None
+    if status != "due" and not prior:
         lo, hi = decision_window(common, cfg.minutes_before_close, cfg.decision_window_seconds)
         return {"status": status, "check_at": lo.isoformat(), "window_ends": hi.isoformat(), "orders_submitted": 0}
     account = client.positions(meta, instruments)
-    previous = feed.previous_day(common.day)
-    books = {t: client.book(i) for t, i in instruments.items()}
-    statuses = {t: client.trading_status(i) for t, i in instruments.items()}
-    snapshot = feed.snapshot()
-    return Frame(datetime.now(UTC), common, previous, snapshot, account, instruments, books,
+    needs_signal = status == "due" and not (prior and prior["trade_date"] == common.day.isoformat())
+    cutoff, _ = decision_window(common, cfg.minutes_before_close, cfg.decision_window_seconds)
+    previous = feed.previous_day(common.day) if needs_signal else None
+    snapshot = feed.snapshot(cutoff) if needs_signal else None
+    books, statuses = {}, {}
+    for t, ins in instruments.items():
+        # An unavailable execution market must not erase a valid daily signal.
+        try:
+            books[t] = client.book(ins)
+        except BotError:
+            pass
+        try:
+            statuses[t] = client.trading_status(ins)
+        except BotError:
+            pass
+    return Frame(clock(), common, previous, snapshot, account, instruments, books,
                  statuses, cfg.signal_feed_verified_realtime)

@@ -1,0 +1,13 @@
+{
+  "start": "2023-07-12",
+  "end": "2026-11-05",
+  "initial_capital": 0.0,
+  "monthly_contribution": 20000.0,
+  "commission_bps": 0.0,
+  "monthly_service_fee": 0.0,
+  "slippage_bps": 0.0,
+  "snapshot_max_age_seconds": 45,
+  "order_delay_seconds": 1,
+  "tax_mode": "iis_b",
+  "iis_open_date": "2020-08-26"
+}

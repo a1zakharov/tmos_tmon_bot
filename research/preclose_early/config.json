@@ -1,0 +1,17 @@
+{
+  "start": "2020-08-26",
+  "end": "2023-07-11",
+  "initial_capital": 0,
+  "monthly_contribution": 20000,
+  "commission_bps": 0,
+  "monthly_service_fee": 0,
+  "slippage_bps": 0,
+  "snapshot_max_age_seconds": 45,
+  "order_delay_seconds": 1,
+  "tax_mode": "iis_b",
+  "iis_open_date": "2020-08-26",
+  "iis_exemption_evaluation_date": "2026-11-05",
+  "iis_closed_at_backtest_end": false,
+  "defensive_fund": "LQDT",
+  "defensive_fund_isin": "RU000A1014L8"
+}

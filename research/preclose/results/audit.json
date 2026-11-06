@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "scenarios": {
+    "hold_tmos": {
+      "max_accounting_error_rub": 1.1004885891452432e-10,
+      "min_cash": 0.0,
+      "trade_legs": 82,
+      "independent_ledger_cash_error": -9.094947017729282e-11
+    },
+    "hold_tmon": {
+      "max_accounting_error_rub": 2.2896529117133468e-10,
+      "min_cash": 1.209999999973661,
+      "trade_legs": 127,
+      "independent_ledger_cash_error": -4.220055416226387e-10
+    },
+    "preclose": {
+      "max_accounting_error_rub": 6.184563972055912e-10,
+      "min_cash": 0.0,
+      "trade_legs": 4441,
+      "independent_ledger_cash_error": -2.0372681319713593e-09
+    },
+    "preclose_unlimited": {
+      "max_accounting_error_rub": 1.5734258340671659e-10,
+      "min_cash": 5.384137580222159e-12,
+      "trade_legs": 112,
+      "independent_ledger_cash_error": -2.3283064365386963e-10
+    },
+    "last_quote": {
+      "max_accounting_error_rub": 8.849383448250592e-10,
+      "min_cash": 0.0,
+      "trade_legs": 11612,
+      "independent_ledger_cash_error": -6.868503987789154e-09
+    },
+    "before_auction": {
+      "max_accounting_error_rub": 7.894414011389017e-10,
+      "min_cash": 0.030000000340805855,
+      "trade_legs": 10657,
+      "independent_ledger_cash_error": -3.1359377317130566e-09
+    },
+    "participation_10pct": {
+      "max_accounting_error_rub": 2.939486876130104e-09,
+      "min_cash": 8.29469826157947e-12,
+      "trade_legs": 10763,
+      "independent_ledger_cash_error": -5.587935447692871e-09
+    }
+  },
+  "checks": [
+    "Processed data hashes match manifest",
+    "All daily account/P&L identities reconcile",
+    "No margin, short positions or simultaneous fund holdings",
+    "Trade minutes start after signals",
+    "Fills respect observed minute volume participation where configured",
+    "Independent exported-trade replay reproduces final cash and both fund holdings"
+  ]
+}

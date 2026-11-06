@@ -47,13 +47,14 @@ def main():
             account_id = os.environ.get("TINVEST_ACCOUNT_ID", "").strip()
             if not account_id or account_id.startswith("replace_"):
                 raise BotError("Pin TINVEST_ACCOUNT_ID to your IIS locally")
+            store = Store(args.state or ROOT / cfg.state_file)
             frame = observe_frame(ReadOnlyTInvest(os.environ.get("TINVEST_TOKEN", "")),
-                                  MoexSignalFeed(), account_id, cfg)
+                                  MoexSignalFeed(), account_id, cfg, store)
         if isinstance(frame, dict):
             result = frame
         else:
             state = args.state or ROOT / ("data/demo.sqlite3" if args.command == "demo" else cfg.state_file)
-            store = Store(state)
+            store = store or Store(state)
             result = check(frame, cfg, store)
         print(json.dumps(result, ensure_ascii=False, indent=2))
     except (BotError, KeyError, ValueError) as exc:

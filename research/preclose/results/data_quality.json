@@ -1,0 +1,36 @@
+{
+  "minute_rows": {
+    "TMOS": 527110,
+    "TMON": 90210,
+    "IMOEX": 17333
+  },
+  "shared_signal_days": 847,
+  "signal_coverage_by_year": {
+    "2023": {
+      "total": 123,
+      "fresh": 0,
+      "stale": 123,
+      "missing": 0
+    },
+    "2024": {
+      "total": 256,
+      "fresh": 0,
+      "stale": 256,
+      "missing": 0
+    },
+    "2025": {
+      "total": 254,
+      "fresh": 0,
+      "stale": 254,
+      "missing": 0
+    },
+    "2026": {
+      "total": 214,
+      "fresh": 161,
+      "stale": 53,
+      "missing": 0
+    }
+  },
+  "cutoffs_in_auction_window": 847,
+  "tmon_minutes_after_1905": 0
+}

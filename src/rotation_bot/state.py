@@ -7,6 +7,8 @@ from pathlib import Path
 
 
 def scope_for(account_id: str) -> str:
+    # Keep the v1 namespace across model upgrades: an existing decision must
+    # still prevent a second decision/order intent on the same account/day.
     return hashlib.sha256((account_id + ":TMOS:TMON:IMOEX:preclose-v1").encode()).hexdigest()
 
 
@@ -32,6 +34,12 @@ class Store:
     def existing(self, scope, day):
         row = self.connection.execute("SELECT payload FROM decisions WHERE scope=? AND trade_date=?",
                                       (scope, day)).fetchone()
+        return json.loads(row[0]) if row else None
+
+    def latest(self, scope, through_day):
+        row = self.connection.execute(
+            "SELECT payload FROM decisions WHERE scope=? AND trade_date<=? ORDER BY trade_date DESC LIMIT 1",
+            (scope, through_day)).fetchone()
         return json.loads(row[0]) if row else None
 
     def record_once(self, scope, day, payload):

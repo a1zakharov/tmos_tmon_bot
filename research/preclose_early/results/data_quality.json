@@ -1,0 +1,35 @@
+{
+  "minute_rows": {
+    "TMOS": 440488,
+    "LQDT_including_VTBM": 513794,
+    "IMOEX": 12027
+  },
+  "coverage_by_year": {
+    "2020": {
+      "total": 90,
+      "fresh": 0,
+      "stale": 90,
+      "missing": 0
+    },
+    "2021": {
+      "total": 255,
+      "fresh": 0,
+      "stale": 255,
+      "missing": 0
+    },
+    "2022": {
+      "total": 230,
+      "fresh": 1,
+      "stale": 229,
+      "missing": 0
+    },
+    "2023": {
+      "total": 131,
+      "fresh": 0,
+      "stale": 131,
+      "missing": 0
+    }
+  },
+  "dates_without_snapshot": [],
+  "cutoffs_in_auction_window": 706
+}
