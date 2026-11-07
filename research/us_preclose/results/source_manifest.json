@@ -1,0 +1,101 @@
+{
+  "config": {
+    "end": "2026-10-23",
+    "periods": {
+      "SGOV": "2020-05-28",
+      "BIL": "2017-12-01"
+    },
+    "risk_symbol": "SPY",
+    "signal_symbol": "SPY",
+    "initial_capital": 0,
+    "monthly_contribution": 200,
+    "currency": "USD",
+    "commission_bps": 0,
+    "slippage_bps": 0,
+    "monthly_service_fee": 0,
+    "tax_rate": 0,
+    "minutes_before_close": 5,
+    "max_quote_age_seconds": 600,
+    "order_delay_seconds": 1,
+    "execution_session": "regular",
+    "dividends": "receivable_on_ex_date_cash_on_pay_date",
+    "hf_revision": "eff0dac55d843b3b83caec819efa213021a3e3e5"
+  },
+  "sources": {
+    "SGOV_issuer.html": {
+      "url": "https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf",
+      "downloaded_at": "2026-11-07T13:06:14.343553+00:00",
+      "sha256": "bece3dde78c683794d34068e3f7376c0503dc28ebdafd01ac6222623d6bf492e",
+      "bytes": 1755901
+    },
+    "SPDR_distributions.xlsx": {
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+      "downloaded_at": "2026-11-07T13:06:13.678722+00:00",
+      "sha256": "4add18439e505ba6c114bea5d352ac68b1ea5420bc99abdf2e21500dd6f1faa2",
+      "bytes": 584557
+    },
+    "SPY_issuer.html": {
+      "url": "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy",
+      "downloaded_at": "2026-11-07T13:06:13.639613+00:00",
+      "sha256": "af86462ab0922a38792c07e9e9a0b4e16b30fcea0b82296db0f4ce988c19a036",
+      "bytes": 235934
+    },
+    "BIL_issuer.html": {
+      "url": "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-bloomberg-1-3-month-t-bill-etf-bil",
+      "downloaded_at": "2026-11-07T13:06:13.583330+00:00",
+      "sha256": "bcbf4c69f5a53eaacb30d1e53ab4e8b39139884509cedb75486ed7ef10e8b8b6",
+      "bytes": 244177
+    },
+    "SPY.parquet": {
+      "url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/eff0dac55d843b3b83caec819efa213021a3e3e5/data/stocks/1m/S/SPY.parquet",
+      "revision": "eff0dac55d843b3b83caec819efa213021a3e3e5",
+      "downloaded_at": "2026-11-07T12:58:43.286931+00:00",
+      "sha256": "267e48ab348dcf71003d73247e7ac692c5c73fab176db9bd2248cdd16f0a2f2a",
+      "bytes": 16801053
+    },
+    "SPY_yahoo.json": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?range=20y&interval=1d&events=div%2Csplits",
+      "downloaded_at": "2026-11-07T13:06:14.246862+00:00",
+      "sha256": "f90ab2fe9ab42e5b5c494415932d21a6c9d945bb6a2fac8bebecbbb5a3c973b9",
+      "bytes": 557783
+    },
+    "SGOV.parquet": {
+      "url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/eff0dac55d843b3b83caec819efa213021a3e3e5/data/stocks/1m/S/SGOV.parquet",
+      "revision": "eff0dac55d843b3b83caec819efa213021a3e3e5",
+      "downloaded_at": "2026-11-07T12:58:42.995675+00:00",
+      "sha256": "57811ba90c7b64e97f5277ee4f6210f6a1f65424d1ac24b0c64d06bfcc2aaa27",
+      "bytes": 5773016
+    },
+    "SGOV_yahoo.json": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SGOV?range=20y&interval=1d&events=div%2Csplits",
+      "downloaded_at": "2026-11-07T13:06:14.334447+00:00",
+      "sha256": "4e79575a2fc5fc576e84691071272fd07a29ff60742f389eac3cf255c057c5fd",
+      "bytes": 183617
+    },
+    "BIL.parquet": {
+      "url": "https://huggingface.co/datasets/syncster-data/historical-market-data/resolve/eff0dac55d843b3b83caec819efa213021a3e3e5/data/stocks/1m/B/BIL.parquet",
+      "revision": "eff0dac55d843b3b83caec819efa213021a3e3e5",
+      "downloaded_at": "2026-11-07T12:58:42.766054+00:00",
+      "sha256": "19d1621c46040602a902b8558b18b533266ae09c414b778c641151797b37229a",
+      "bytes": 8730081
+    },
+    "BIL_yahoo.json": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BIL?range=20y&interval=1d&events=div%2Csplits",
+      "downloaded_at": "2026-11-07T13:06:14.443590+00:00",
+      "sha256": "28ee0961e3013d3d2cf3ad8b2d73d393fdbae18c8027b65d33cc0605d104fb93",
+      "bytes": 524077
+    }
+  },
+  "dataset_card": "https://huggingface.co/datasets/syncster-data/historical-market-data/tree/eff0dac55d843b3b83caec819efa213021a3e3e5",
+  "price_adjustment": "validated raw ETF bars; no splits inside either configured study period",
+  "normalized_files": {
+    "SPY_daily.csv": "d9a2bb62602809d64164dbff4d1db6502b10e8833fbb66fcfd8e3a8c858472bb",
+    "SPY_minutes.csv": "a8d5c677d61b76b6a6a41d075422b35199f07d01b4f96860248aa2622434dbe7",
+    "SGOV_daily.csv": "64b7bbc83bc1a687b2e064ccc5b45d4c416dbedef072ed6b0f877ac70de5202b",
+    "SGOV_minutes.csv": "bedc8f2e8481ff7801419ca8c7f2dfba969eb8ff497123b72e1102450dbcd914",
+    "BIL_daily.csv": "73fdefe689b7c2927f9917cc0dbc36b088e3b4c6b542df567596e46b28fb3add",
+    "BIL_minutes.csv": "8621745a2c142435a7db7c2102d063fd4b855cb0834a84a2d680e67ae3fbd08b",
+    "schedule.csv": "6ed4878708e08a6c73dac232da245e02fd71ff0194efc140cedff967902a87d9",
+    "dividends.csv": "7db71c462e1a570f94b8357f3d544f62c6b6839ac75edcfe47fb718942b92896"
+  }
+}

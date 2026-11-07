@@ -1,0 +1,22 @@
+{
+  "end": "2026-10-23",
+  "periods": {
+    "SGOV": "2020-05-28",
+    "BIL": "2017-12-01"
+  },
+  "risk_symbol": "SPY",
+  "signal_symbol": "SPY",
+  "initial_capital": 0,
+  "monthly_contribution": 200,
+  "currency": "USD",
+  "commission_bps": 0,
+  "slippage_bps": 0,
+  "monthly_service_fee": 0,
+  "tax_rate": 0,
+  "minutes_before_close": 5,
+  "max_quote_age_seconds": 600,
+  "order_delay_seconds": 1,
+  "execution_session": "regular",
+  "dividends": "receivable_on_ex_date_cash_on_pay_date",
+  "hf_revision": "eff0dac55d843b3b83caec819efa213021a3e3e5"
+}

@@ -1,0 +1,24 @@
+{
+  "SGOV": {
+    "signal_days": 1611,
+    "early_close_days": 12,
+    "missing_SPY_snapshot_dates": [],
+    "stale_SPY_snapshot_dates": [],
+    "minute_rows": {
+      "SPY": 626119,
+      "SGOV": 417132
+    }
+  },
+  "BIL": {
+    "signal_days": 2235,
+    "early_close_days": 18,
+    "missing_SPY_snapshot_dates": [],
+    "stale_SPY_snapshot_dates": [
+      "2019-08-12"
+    ],
+    "minute_rows": {
+      "SPY": 868313,
+      "BIL": 748061
+    }
+  }
+}

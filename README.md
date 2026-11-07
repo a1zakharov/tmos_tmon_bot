@@ -14,6 +14,10 @@ LQDT и его прежним тикером VTBM: [отчёт](research/preclos
 [код и воспроизведение](research/preclose_early/README.md). Это отдельная пара
 для исторического исследования; рабочая пара бота — TMOS/TMON.
 
+Аналогичная проверка американского рынка (SPY / SGOV и SPY / BIL,
+200 $ в месяц): [результаты и допущения](research/us_preclose/results/report.md),
+[воспроизведение](research/us_preclose/README.md).
+
 ## Зафиксированная логика
 
 - Управляемая пара: **TMOS / TMON**.

@@ -1,0 +1,1031 @@
+{
+  "sgov_whole_hold_spy": {
+    "name": "sgov_whole_hold_spy",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "SPY",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 15600.0,
+    "final_equity": 26085.85657990625,
+    "profit": 10485.856579906249,
+    "xirr": 0.15718056600040495,
+    "twr_cagr": 0.15292593987330694,
+    "max_drawdown": -0.2389870816686367,
+    "target_changes": 0,
+    "trade_fills": 34,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 853.2975759999998,
+    "dividends_paid": 790.9660539999999,
+    "final_receivable": 62.331522,
+    "final_cash": 184.5460539999998,
+    "cash_fraction_final": 0.00707456369832817,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": 0.17579446992762393,
+        "deposits": 1600.0,
+        "end_equity": 1794.88393353125
+      },
+      "2021": {
+        "twr": 0.2521822467881396,
+        "deposits": 2400.0,
+        "end_equity": 4973.439044550782
+      },
+      "2022": {
+        "twr": -0.1768368527476365,
+        "deposits": 2400.0,
+        "end_equity": 6349.5664068125
+      },
+      "2023": {
+        "twr": 0.2582205001108304,
+        "deposits": 2400.0,
+        "end_equity": 10712.857270289063
+      },
+      "2024": {
+        "twr": 0.24021294666104787,
+        "deposits": 2400.0,
+        "end_equity": 15940.021514425782
+      },
+      "2025": {
+        "twr": 0.17466124069663613,
+        "deposits": 2400.0,
+        "end_equity": 21402.135528214843
+      },
+      "2026": {
+        "twr": 0.1197353292013339,
+        "deposits": 2000.0,
+        "end_equity": 26085.85657990625
+      }
+    }
+  },
+  "sgov_whole_hold_defensive": {
+    "name": "sgov_whole_hold_defensive",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "SGOV",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 15600.0,
+    "final_equity": 17701.24406686914,
+    "profit": 2101.2440668691415,
+    "xirr": 0.038631906395611294,
+    "twr_cagr": 0.029701674613258344,
+    "max_drawdown": -0.0002987098595707005,
+    "target_changes": 0,
+    "trade_fills": 98,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 2024.8592259999996,
+    "dividends_paid": 2024.8592259999996,
+    "final_receivable": 0.0,
+    "final_cash": 85.74342600000006,
+    "cash_fraction_final": 0.004843920894830399,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": 0.00030270317812486347,
+        "deposits": 1600.0,
+        "end_equity": 1600.349647234375
+      },
+      "2021": {
+        "twr": 0.0004028075635071904,
+        "deposits": 2400.0,
+        "end_equity": 4001.556168035156
+      },
+      "2022": {
+        "twr": 0.015661462312894336,
+        "deposits": 2400.0,
+        "end_equity": 6494.0275139375
+      },
+      "2023": {
+        "twr": 0.05072713058572087,
+        "deposits": 2400.0,
+        "end_equity": 9291.75927216211
+      },
+      "2024": {
+        "twr": 0.05236069546180011,
+        "deposits": 2400.0,
+        "end_equity": 12244.692511768555
+      },
+      "2025": {
+        "twr": 0.042217561310715856,
+        "deposits": 2400.0,
+        "end_equity": 15215.818873266113
+      },
+      "2026": {
+        "twr": 0.02975410980717963,
+        "deposits": 2000.0,
+        "end_equity": 17701.24406686914
+      }
+    }
+  },
+  "sgov_whole_rotation": {
+    "name": "sgov_whole_rotation",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "rotation",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 15600.0,
+    "final_equity": 19648.27828444925,
+    "profit": 4048.2782844492504,
+    "xirr": 0.07049949816884025,
+    "twr_cagr": 0.02843474564309756,
+    "max_drawdown": -0.27758739761382567,
+    "target_changes": 397,
+    "trade_fills": 851,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 1185.1753740000001,
+    "dividends_paid": 1137.9545240000002,
+    "final_receivable": 47.220850000000006,
+    "final_cash": 73.01672400003008,
+    "cash_fraction_final": 0.0037161894260129454,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": -0.015153829800488738,
+        "deposits": 1600.0,
+        "end_equity": 1588.2856845312497
+      },
+      "2021": {
+        "twr": -0.002952858342310405,
+        "deposits": 2400.0,
+        "end_equity": 3996.1491399999977
+      },
+      "2022": {
+        "twr": -0.21876209822750659,
+        "deposits": 2400.0,
+        "end_equity": 5232.751658785147
+      },
+      "2023": {
+        "twr": 0.15306830374432567,
+        "deposits": 2400.0,
+        "end_equity": 8682.606468303704
+      },
+      "2024": {
+        "twr": 0.1746105844417567,
+        "deposits": 2400.0,
+        "end_equity": 12892.833367937501
+      },
+      "2025": {
+        "twr": 0.07587779543821238,
+        "deposits": 2400.0,
+        "end_equity": 16390.336893307136
+      },
+      "2026": {
+        "twr": 0.07052922570573705,
+        "deposits": 2000.0,
+        "end_equity": 19648.27828444925
+      }
+    }
+  },
+  "sgov_fractional_hold_spy": {
+    "name": "sgov_fractional_hold_spy",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "SPY",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 15600.0,
+    "final_equity": 26550.58207531795,
+    "profit": 10950.58207531795,
+    "xirr": 0.1625986767146419,
+    "twr_cagr": 0.16735355821238085,
+    "max_drawdown": -0.24483770063182897,
+    "target_changes": 0,
+    "trade_fills": 108,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 885.38301025044,
+    "dividends_paid": 820.0506428984539,
+    "final_receivable": 65.332367351986,
+    "final_cash": 0.0006006434547600747,
+    "cash_fraction_final": 2.2622609668450438e-08,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": 0.2355012455486032,
+        "deposits": 1600.0,
+        "end_equity": 1841.6191325393745
+      },
+      "2021": {
+        "twr": 0.28069918816640693,
+        "deposits": 2400.0,
+        "end_equity": 5115.3744715407765
+      },
+      "2022": {
+        "twr": -0.18226373987561417,
+        "deposits": 2400.0,
+        "end_equity": 6432.972275187595
+      },
+      "2023": {
+        "twr": 0.2614460050077365,
+        "deposits": 2400.0,
+        "end_equity": 10842.985315340507
+      },
+      "2024": {
+        "twr": 0.24857275864501127,
+        "deposits": 2400.0,
+        "end_equity": 16200.884148145711
+      },
+      "2025": {
+        "twr": 0.1771408987548342,
+        "deposits": 2400.0,
+        "end_equity": 21752.820746149577
+      },
+      "2026": {
+        "twr": 0.12289325146785424,
+        "deposits": 2000.0,
+        "end_equity": 26550.58207531795
+      }
+    }
+  },
+  "sgov_fractional_hold_defensive": {
+    "name": "sgov_fractional_hold_defensive",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "SGOV",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 15600.0,
+    "final_equity": 17711.09189589341,
+    "profit": 2111.091895893409,
+    "xirr": 0.0388017960404856,
+    "twr_cagr": 0.029842906649262924,
+    "max_drawdown": -0.0002994786825042395,
+    "target_changes": 0,
+    "trade_fills": 153,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 2034.3208333667692,
+    "dividends_paid": 2034.3208333667692,
+    "final_receivable": 0.0,
+    "final_cash": 8.650657001396667e-05,
+    "cash_fraction_final": 4.884316027631507e-09,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": 0.0003207431742926481,
+        "deposits": 1600.0,
+        "end_equity": 1600.3797602124375
+      },
+      "2021": {
+        "twr": 0.0004028323003866241,
+        "deposits": 2400.0,
+        "end_equity": 4001.5863776473984
+      },
+      "2022": {
+        "twr": 0.015747517146339485,
+        "deposits": 2400.0,
+        "end_equity": 6494.588907848346
+      },
+      "2023": {
+        "twr": 0.05106110250954243,
+        "deposits": 2400.0,
+        "end_equity": 9294.95407895247
+      },
+      "2024": {
+        "twr": 0.05260550934075714,
+        "deposits": 2400.0,
+        "end_equity": 12250.615342385712
+      },
+      "2025": {
+        "twr": 0.04235003249007385,
+        "deposits": 2400.0,
+        "end_equity": 15223.777626537973
+      },
+      "2026": {
+        "twr": 0.029855024194654245,
+        "deposits": 2000.0,
+        "end_equity": 17711.09189589341
+      }
+    }
+  },
+  "sgov_fractional_rotation": {
+    "name": "sgov_fractional_rotation",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "rotation",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 15600.0,
+    "final_equity": 19773.068811538444,
+    "profit": 4173.068811538444,
+    "xirr": 0.07243275832929319,
+    "twr_cagr": 0.03116692080613115,
+    "max_drawdown": -0.2882693533872863,
+    "target_changes": 397,
+    "trade_fills": 909,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 1203.8604214963002,
+    "dividends_paid": 1154.7954310864081,
+    "final_receivable": 49.06499040989199,
+    "final_cash": 2.743000368354842e-05,
+    "cash_fraction_final": 1.3872405919885244e-09,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": -0.0028764130429900225,
+        "deposits": 1600.0,
+        "end_equity": 1598.9507804647822
+      },
+      "2021": {
+        "twr": -0.002383987533413956,
+        "deposits": 2400.0,
+        "end_equity": 4012.6260566405454
+      },
+      "2022": {
+        "twr": -0.22333257388303973,
+        "deposits": 2400.0,
+        "end_equity": 5220.810277395615
+      },
+      "2023": {
+        "twr": 0.15516646092197783,
+        "deposits": 2400.0,
+        "end_equity": 8683.569035711684
+      },
+      "2024": {
+        "twr": 0.18114576103931124,
+        "deposits": 2400.0,
+        "end_equity": 12960.056070196864
+      },
+      "2025": {
+        "twr": 0.07633677690577145,
+        "deposits": 2400.0,
+        "end_equity": 16469.649915734346
+      },
+      "2026": {
+        "twr": 0.07278520769815722,
+        "deposits": 2000.0,
+        "end_equity": 19773.068811538444
+      }
+    }
+  },
+  "sgov_whole_rotation_exdiv_neutral": {
+    "name": "sgov_whole_rotation_exdiv_neutral",
+    "risk": "SPY",
+    "defensive": "SGOV",
+    "allocation": "rotation",
+    "start": "2020-05-28",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 15600.0,
+    "final_equity": 19827.907404773436,
+    "profit": 4227.907404773436,
+    "xirr": 0.0732784749558959,
+    "twr_cagr": 0.03021214847116327,
+    "max_drawdown": -0.27758739761382567,
+    "target_changes": 395,
+    "trade_fills": 845,
+    "partial_fills": 0,
+    "accepted_signals": 1611,
+    "stale_signals": 0,
+    "missing_signals": 0,
+    "dividends_earned": 1189.9031870000003,
+    "dividends_paid": 1140.7935030000003,
+    "final_receivable": 49.109684,
+    "final_cash": 49.437002999999095,
+    "cash_fraction_final": 0.002493304108738044,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2020": {
+        "twr": -0.015153829800488738,
+        "deposits": 1600.0,
+        "end_equity": 1588.2856845312497
+      },
+      "2021": {
+        "twr": -0.002952858342310405,
+        "deposits": 2400.0,
+        "end_equity": 3996.1491399999977
+      },
+      "2022": {
+        "twr": -0.21876209822750659,
+        "deposits": 2400.0,
+        "end_equity": 5232.751658785147
+      },
+      "2023": {
+        "twr": 0.15306830374432567,
+        "deposits": 2400.0,
+        "end_equity": 8682.606468303704
+      },
+      "2024": {
+        "twr": 0.1781763360045916,
+        "deposits": 2400.0,
+        "end_equity": 12929.1114679375
+      },
+      "2025": {
+        "twr": 0.08487338816824286,
+        "deposits": 2400.0,
+        "end_equity": 16563.86900781396
+      },
+      "2026": {
+        "twr": 0.07020858817463638,
+        "deposits": 2000.0,
+        "end_equity": 19827.907404773436
+      }
+    }
+  },
+  "bil_whole_hold_spy": {
+    "name": "bil_whole_hold_spy",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "SPY",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 21400.0,
+    "final_equity": 43473.60337707812,
+    "profit": 22073.60337707812,
+    "xirr": 0.15410575894640016,
+    "twr_cagr": 0.1353811350049794,
+    "max_drawdown": -0.33309963708295165,
+    "target_changes": 0,
+    "trade_fills": 57,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 1924.2660469999998,
+    "dividends_paid": 1818.491343,
+    "final_receivable": 105.774704,
+    "final_cash": 49.54034300000001,
+    "cash_fraction_final": 0.0011395499602437058,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.0,
+        "deposits": 200.0,
+        "end_equity": 200.0
+      },
+      "2018": {
+        "twr": -0.061790017977133016,
+        "deposits": 2400.0,
+        "end_equity": 2391.218511520508
+      },
+      "2019": {
+        "twr": 0.29314341730755467,
+        "deposits": 2400.0,
+        "end_equity": 5800.688056976563
+      },
+      "2020": {
+        "twr": 0.17523945759764392,
+        "deposits": 2400.0,
+        "end_equity": 9688.898308070313
+      },
+      "2021": {
+        "twr": 0.2757512741891115,
+        "deposits": 2400.0,
+        "end_equity": 15110.215568107422
+      },
+      "2022": {
+        "twr": -0.1777182706815401,
+        "deposits": 2400.0,
+        "end_equity": 14679.940993679687
+      },
+      "2023": {
+        "twr": 0.25862284698806026,
+        "deposits": 2400.0,
+        "end_equity": 21203.275477578125
+      },
+      "2024": {
+        "twr": 0.24547591424057447,
+        "deposits": 2400.0,
+        "end_equity": 29068.840055402343
+      },
+      "2025": {
+        "twr": 0.175131674763499,
+        "deposits": 2400.0,
+        "end_equity": 36838.48811123828
+      },
+      "2026": {
+        "twr": 0.12246361089579527,
+        "deposits": 2000.0,
+        "end_equity": 43473.60337707812
+      }
+    }
+  },
+  "bil_whole_hold_defensive": {
+    "name": "bil_whole_hold_defensive",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "BIL",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 21400.0,
+    "final_equity": 24742.899606422852,
+    "profit": 3342.8996064228522,
+    "xirr": 0.03218845655607663,
+    "twr_cagr": 0.02520743375199519,
+    "max_drawdown": -0.002051313428998558,
+    "target_changes": 0,
+    "trade_fills": 145,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 3295.4462479999993,
+    "dividends_paid": 3295.4462479999993,
+    "final_receivable": 0.0,
+    "final_cash": 2.8003479999999996,
+    "cash_fraction_final": 0.00011317784271626253,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.0005196552587887204,
+        "deposits": 200.0,
+        "end_equity": 200.1039310517578
+      },
+      "2018": {
+        "twr": 0.01672910738688782,
+        "deposits": 2400.0,
+        "end_equity": 2627.2555163652346
+      },
+      "2019": {
+        "twr": 0.019975193049183382,
+        "deposits": 2400.0,
+        "end_equity": 5103.925801784668
+      },
+      "2020": {
+        "twr": 0.003967116504260737,
+        "deposits": 2400.0,
+        "end_equity": 7525.614755731445
+      },
+      "2021": {
+        "twr": -0.0009757594169900186,
+        "deposits": 2400.0,
+        "end_equity": 9916.965063958985
+      },
+      "2022": {
+        "twr": 0.013728587622670485,
+        "deposits": 2400.0,
+        "end_equity": 12480.447980015626
+      },
+      "2023": {
+        "twr": 0.04917656152912597,
+        "deposits": 2400.0,
+        "end_equity": 15561.086870240235
+      },
+      "2024": {
+        "twr": 0.051747451490126384,
+        "deposits": 2400.0,
+        "end_equity": 18832.056789561037
+      },
+      "2025": {
+        "twr": 0.04131984445231751,
+        "deposits": 2400.0,
+        "end_equity": 22063.24673107373
+      },
+      "2026": {
+        "twr": 0.0293474412553294,
+        "deposits": 2000.0,
+        "end_equity": 24742.899606422852
+      }
+    }
+  },
+  "bil_whole_rotation": {
+    "name": "bil_whole_rotation",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "rotation",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 21400.0,
+    "final_equity": 27717.703522278825,
+    "profit": 6317.703522278825,
+    "xirr": 0.05707881976161236,
+    "twr_cagr": 0.04967243893859741,
+    "max_drawdown": -0.27219702313213545,
+    "target_changes": 529,
+    "trade_fills": 1140,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 2085.6359489999995,
+    "dividends_paid": 2017.6379249999998,
+    "final_receivable": 67.99802400000003,
+    "final_cash": 69.07632500001637,
+    "cash_fraction_final": 0.0024921373787151766,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.0003670152587889053,
+        "deposits": 200.0,
+        "end_equity": 200.07340305175785
+      },
+      "2018": {
+        "twr": 0.14867231635847378,
+        "deposits": 2400.0,
+        "end_equity": 2786.444633858399
+      },
+      "2019": {
+        "twr": 0.1263863436592434,
+        "deposits": 2400.0,
+        "end_equity": 5723.342875920898
+      },
+      "2020": {
+        "twr": -0.05961491061726043,
+        "deposits": 2400.0,
+        "end_equity": 7836.681173656255
+      },
+      "2021": {
+        "twr": 0.030342991606101544,
+        "deposits": 2400.0,
+        "end_equity": 10509.872492790051
+      },
+      "2022": {
+        "twr": -0.21566604242274023,
+        "deposits": 2400.0,
+        "end_equity": 10354.818060246116
+      },
+      "2023": {
+        "twr": 0.15177919890282188,
+        "deposits": 2400.0,
+        "end_equity": 14574.434982564464
+      },
+      "2024": {
+        "twr": 0.17822383697888577,
+        "deposits": 2400.0,
+        "end_equity": 19871.29959122315
+      },
+      "2025": {
+        "twr": 0.07367286986635957,
+        "deposits": 2400.0,
+        "end_equity": 23852.485423142116
+      },
+      "2026": {
+        "twr": 0.0737945859931377,
+        "deposits": 2000.0,
+        "end_equity": 27717.703522278825
+      }
+    }
+  },
+  "bil_fractional_hold_spy": {
+    "name": "bil_fractional_hold_spy",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "SPY",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 21400.0,
+    "final_equity": 44063.53253174679,
+    "profit": 22663.532531746787,
+    "xirr": 0.15698526338762744,
+    "twr_cagr": 0.1426737557988973,
+    "max_drawdown": -0.3370375745336387,
+    "target_changes": 0,
+    "trade_fills": 146,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 1983.827205880466,
+    "dividends_paid": 1875.075958266724,
+    "final_receivable": 108.751247613742,
+    "final_cash": 0.0006242817250097232,
+    "cash_fraction_final": 1.4167763888651964e-08,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.012997377629282214,
+        "deposits": 200.0,
+        "end_equity": 202.59947552585646
+      },
+      "2018": {
+        "twr": -0.047072217238951164,
+        "deposits": 2400.0,
+        "end_equity": 2402.0621387539854
+      },
+      "2019": {
+        "twr": 0.31067193154739847,
+        "deposits": 2400.0,
+        "end_equity": 5876.625986985908
+      },
+      "2020": {
+        "twr": 0.18248951106968003,
+        "deposits": 2400.0,
+        "end_equity": 9834.219733970953
+      },
+      "2021": {
+        "twr": 0.2851165556986117,
+        "deposits": 2400.0,
+        "end_equity": 15398.988227866488
+      },
+      "2022": {
+        "twr": -0.18195111885364568,
+        "deposits": 2400.0,
+        "end_equity": 14847.670738997133
+      },
+      "2023": {
+        "twr": 0.26142924342608986,
+        "deposits": 2400.0,
+        "end_equity": 21457.406136690137
+      },
+      "2024": {
+        "twr": 0.24862090010706162,
+        "deposits": 2400.0,
+        "end_equity": 29454.897828722846
+      },
+      "2025": {
+        "twr": 0.17697988378265794,
+        "deposits": 2400.0,
+        "end_equity": 37349.669302129
+      },
+      "2026": {
+        "twr": 0.12287651465240068,
+        "deposits": 2000.0,
+        "end_equity": 44063.53253174679
+      }
+    }
+  },
+  "bil_fractional_hold_defensive": {
+    "name": "bil_fractional_hold_defensive",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "BIL",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 21400.0,
+    "final_equity": 24753.34520098739,
+    "profit": 3353.345200987391,
+    "xirr": 0.0322814211047986,
+    "twr_cagr": 0.025377708572556612,
+    "max_drawdown": -0.0020648491275272463,
+    "target_changes": 0,
+    "trade_fills": 190,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 3305.7526067633785,
+    "dividends_paid": 3305.7526067633785,
+    "final_receivable": 0.0,
+    "final_cash": 1.791579748555705e-06,
+    "cash_fraction_final": 7.237727806115839e-11,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.0005682657603021113,
+        "deposits": 200.0,
+        "end_equity": 200.11365315206046
+      },
+      "2018": {
+        "twr": 0.017446411539060014,
+        "deposits": 2400.0,
+        "end_equity": 2628.1503677659516
+      },
+      "2019": {
+        "twr": 0.02025516300542951,
+        "deposits": 2400.0,
+        "end_equity": 5105.87880945201
+      },
+      "2020": {
+        "twr": 0.003984177286764146,
+        "deposits": 2400.0,
+        "end_equity": 7527.667861713183
+      },
+      "2021": {
+        "twr": -0.0009804573000752326,
+        "deposits": 2400.0,
+        "end_equity": 9918.975826504038
+      },
+      "2022": {
+        "twr": 0.013775413419560678,
+        "deposits": 2400.0,
+        "end_equity": 12483.042212835582
+      },
+      "2023": {
+        "twr": 0.04935193970464402,
+        "deposits": 2400.0,
+        "end_equity": 15566.228247167435
+      },
+      "2024": {
+        "twr": 0.05183333713742466,
+        "deposits": 2400.0,
+        "end_equity": 18838.89607167543
+      },
+      "2025": {
+        "twr": 0.04143298926041239,
+        "deposits": 2400.0,
+        "end_equity": 22072.65120777792
+      },
+      "2026": {
+        "twr": 0.02938100397251553,
+        "deposits": 2000.0,
+        "end_equity": 24753.34520098739
+      }
+    }
+  },
+  "bil_fractional_rotation": {
+    "name": "bil_fractional_rotation",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "rotation",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1e-06,
+    "contributions": 21400.0,
+    "final_equity": 27773.18669762245,
+    "profit": 6373.186697622448,
+    "xirr": 0.057515275597083824,
+    "twr_cagr": 0.05138754864253081,
+    "max_drawdown": -0.27921954872673416,
+    "target_changes": 529,
+    "trade_fills": 1219,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 2106.119885426636,
+    "dividends_paid": 2037.007439922466,
+    "final_receivable": 69.11244550417,
+    "final_cash": 4.697969416156411e-05,
+    "cash_fraction_final": 1.6915485670783992e-09,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": -0.004568557827759445,
+        "deposits": 200.0,
+        "end_equity": 199.08628843444805
+      },
+      "2018": {
+        "twr": 0.17037073785337853,
+        "deposits": 2400.0,
+        "end_equity": 2798.640404393962
+      },
+      "2019": {
+        "twr": 0.13086325229119145,
+        "deposits": 2400.0,
+        "end_equity": 5755.340059787663
+      },
+      "2020": {
+        "twr": -0.0636531511967251,
+        "deposits": 2400.0,
+        "end_equity": 7843.204071242997
+      },
+      "2021": {
+        "twr": 0.031244922594258595,
+        "deposits": 2400.0,
+        "end_equity": 10524.931937617617
+      },
+      "2022": {
+        "twr": -0.21989594006346913,
+        "deposits": 2400.0,
+        "end_equity": 10316.106818337033
+      },
+      "2023": {
+        "twr": 0.15491339284936734,
+        "deposits": 2400.0,
+        "end_equity": 14567.207078055637
+      },
+      "2024": {
+        "twr": 0.18046011315883548,
+        "deposits": 2400.0,
+        "end_equity": 19898.512845442405
+      },
+      "2025": {
+        "twr": 0.07530776975423681,
+        "deposits": 2400.0,
+        "end_equity": 23916.228490890553
+      },
+      "2026": {
+        "twr": 0.07324106870827718,
+        "deposits": 2000.0,
+        "end_equity": 27773.18669762245
+      }
+    }
+  },
+  "bil_whole_rotation_exdiv_neutral": {
+    "name": "bil_whole_rotation_exdiv_neutral",
+    "risk": "SPY",
+    "defensive": "BIL",
+    "allocation": "rotation",
+    "start": "2017-12-01",
+    "end": "2026-10-23",
+    "share_step": 1.0,
+    "contributions": 21400.0,
+    "final_equity": 27885.121774785675,
+    "profit": 6485.121774785675,
+    "xirr": 0.05839296904059826,
+    "twr_cagr": 0.05047019248881246,
+    "max_drawdown": -0.27219730032614864,
+    "target_changes": 527,
+    "trade_fills": 1134,
+    "partial_fills": 0,
+    "accepted_signals": 2234,
+    "stale_signals": 1,
+    "missing_signals": 0,
+    "dividends_earned": 2088.4607069999997,
+    "dividends_paid": 2020.4626829999995,
+    "final_receivable": 67.998024,
+    "final_cash": 53.2345830000304,
+    "cash_fraction_final": 0.0019090676178493955,
+    "commission": 0,
+    "slippage": 0,
+    "tax_paid": 0,
+    "annual": {
+      "2017": {
+        "twr": 0.0003170152587890218,
+        "deposits": 200.0,
+        "end_equity": 200.06340305175783
+      },
+      "2018": {
+        "twr": 0.1486741971713219,
+        "deposits": 2400.0,
+        "end_equity": 2786.4346338583987
+      },
+      "2019": {
+        "twr": 0.12638665980296016,
+        "deposits": 2400.0,
+        "end_equity": 5723.332875920898
+      },
+      "2020": {
+        "twr": -0.05961502635993421,
+        "deposits": 2400.0,
+        "end_equity": 7836.671173656255
+      },
+      "2021": {
+        "twr": 0.030343024796535056,
+        "deposits": 2400.0,
+        "end_equity": 10509.86249279005
+      },
+      "2022": {
+        "twr": -0.21566622367701904,
+        "deposits": 2400.0,
+        "end_equity": 10354.808060246114
+      },
+      "2023": {
+        "twr": 0.15177932633083135,
+        "deposits": 2400.0,
+        "end_equity": 14574.424982564462
+      },
+      "2024": {
+        "twr": 0.18047234426220848,
+        "deposits": 2400.0,
+        "end_equity": 19906.55288822314
+      },
+      "2025": {
+        "twr": 0.07995388586043206,
+        "deposits": 2400.0,
+        "end_equity": 24031.480610395534
+      },
+      "2026": {
+        "twr": 0.07279053067192143,
+        "deposits": 2000.0,
+        "end_equity": 27885.121774785675
+      }
+    }
+  }
+}

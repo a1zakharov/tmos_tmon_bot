@@ -1,0 +1,61 @@
+{
+  "hf_revision": "eff0dac55d843b3b83caec819efa213021a3e3e5",
+  "symbols": {
+    "SPY": {
+      "raw_rows": 1114594,
+      "regular_session_rows": 1056134,
+      "outside_session_removed": 58460,
+      "invalid_rows_removed": 0,
+      "first_minute": "2016-01-04 14:30:00+00:00",
+      "last_minute": "2026-10-23 19:59:00+00:00",
+      "daily_close_relative_error_median": 7.853403141355741e-05,
+      "daily_close_relative_error_p99": 0.000733337246826061,
+      "close_difference_over_1pct_dates": [],
+      "dividend_crosscheck_max_difference_usd": 0.003430999999999962,
+      "issuer_dividend_events_in_period": 36,
+      "daily_candles_aggregated_from_observed_minutes": [],
+      "splits_outside_period": []
+    },
+    "SGOV": {
+      "raw_rows": 639273,
+      "regular_session_rows": 417132,
+      "outside_session_removed": 222141,
+      "invalid_rows_removed": 0,
+      "first_minute": "2020-05-28 14:03:00+00:00",
+      "last_minute": "2026-10-23 19:59:00+00:00",
+      "daily_close_relative_error_median": 1.642553895414567e-05,
+      "daily_close_relative_error_p99": 0.00014998360689011392,
+      "close_difference_over_1pct_dates": [],
+      "dividend_crosscheck_max_difference_usd": 0.0004999999999999987,
+      "issuer_dividend_events_in_period": 75,
+      "daily_candles_aggregated_from_observed_minutes": [
+        "2020-05-28",
+        "2020-05-29"
+      ],
+      "splits_outside_period": []
+    },
+    "BIL": {
+      "raw_rows": 949046,
+      "regular_session_rows": 825436,
+      "outside_session_removed": 123610,
+      "invalid_rows_removed": 0,
+      "first_minute": "2016-01-04 14:30:00+00:00",
+      "last_minute": "2026-10-23 19:59:00+00:00",
+      "daily_close_relative_error_median": 5.461549178087388e-05,
+      "daily_close_relative_error_p99": 0.00021812206890767786,
+      "close_difference_over_1pct_dates": [],
+      "dividend_crosscheck_max_difference_usd": 0.0005410000000000137,
+      "issuer_dividend_events_in_period": 84,
+      "daily_candles_aggregated_from_observed_minutes": [],
+      "splits_outside_period": [
+        {
+          "date": 1512052200,
+          "numerator": 1.0,
+          "denominator": 2.0,
+          "splitRatio": "1:2"
+        }
+      ]
+    }
+  },
+  "calendar_package": "4.13.2"
+}

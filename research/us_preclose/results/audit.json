@@ -1,0 +1,142 @@
+{
+  "sgov_whole_hold_spy": {
+    "status": "passed",
+    "cash_ledger_error": 1.7053025658242404e-12,
+    "max_daily_accounting_error": 2.9558577807620168e-12,
+    "end_units_steps": {
+      "SPY": 34,
+      "SGOV": 0
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_whole_hold_defensive": {
+    "status": "passed",
+    "cash_ledger_error": -1.0658141036401503e-11,
+    "max_daily_accounting_error": 2.7711166694643907e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "SGOV": 175
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_whole_rotation": {
+    "status": "passed",
+    "cash_ledger_error": -2.546585164964199e-11,
+    "max_daily_accounting_error": 7.560174708487466e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "SGOV": 194
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_fractional_hold_spy": {
+    "status": "passed",
+    "cash_ledger_error": -4.035882739117369e-12,
+    "max_daily_accounting_error": 4.192202140984591e-12,
+    "end_units_steps": {
+      "SPY": 34850389,
+      "SGOV": 0
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_fractional_hold_defensive": {
+    "status": "passed",
+    "cash_ledger_error": 1.2676082405960187e-11,
+    "max_daily_accounting_error": 3.947953075567057e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "SGOV": 175949644
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_fractional_rotation": {
+    "status": "passed",
+    "cash_ledger_error": 7.275957614183426e-12,
+    "max_daily_accounting_error": 6.139089236967266e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "SGOV": 195946782
+    },
+    "dividend_entitlements_match": true
+  },
+  "sgov_whole_rotation_exdiv_neutral": {
+    "status": "passed",
+    "cash_ledger_error": -2.9103830456733704e-11,
+    "max_daily_accounting_error": 3.922195901395753e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "SGOV": 196
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_whole_hold_spy": {
+    "status": "passed",
+    "cash_ledger_error": -6.366462912410498e-12,
+    "max_daily_accounting_error": 5.7980287238024175e-12,
+    "end_units_steps": {
+      "SPY": 57,
+      "BIL": 0
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_whole_hold_defensive": {
+    "status": "passed",
+    "cash_ledger_error": -5.4711790653527714e-12,
+    "max_daily_accounting_error": 2.7853275241795927e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "BIL": 270
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_whole_rotation": {
+    "status": "passed",
+    "cash_ledger_error": -7.275957614183426e-12,
+    "max_daily_accounting_error": 4.035882739117369e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "BIL": 301
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_fractional_hold_spy": {
+    "status": "passed",
+    "cash_ledger_error": -1.5347723092418164e-12,
+    "max_daily_accounting_error": 7.489120434911456e-12,
+    "end_units_steps": {
+      "SPY": 57837523,
+      "BIL": 0
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_fractional_hold_defensive": {
+    "status": "passed",
+    "cash_ledger_error": 2.029310053330846e-11,
+    "max_daily_accounting_error": 6.7621463983869035e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "BIL": 270144559
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_fractional_rotation": {
+    "status": "passed",
+    "cash_ledger_error": 1.8189894035458565e-11,
+    "max_daily_accounting_error": 7.7999828818065e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "BIL": 302347212
+    },
+    "dividend_entitlements_match": true
+  },
+  "bil_whole_rotation_exdiv_neutral": {
+    "status": "passed",
+    "cash_ledger_error": -7.275957614183426e-12,
+    "max_daily_accounting_error": 4.121147867408581e-12,
+    "end_units_steps": {
+      "SPY": 0,
+      "BIL": 303
+    },
+    "dividend_entitlements_match": true
+  }
+}
